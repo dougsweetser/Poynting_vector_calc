@@ -4,12 +4,7 @@ copyright: 2016, Doug Sweetser, all rights reserved.
 
 theme_dir: spacelab-mod
 
-dev_addr: 127.0.0.1:8001
-
-markdown_extensions:
-    include:
-    subscript:
-    superscript:
+dev_addr: 127.0.0.1:8005
 
 pages:
 - [index.md]

@@ -8,6 +8,11 @@ time stamp, x reading, y reading, z reading, combined reading
 
 The software assumes one needs only the x, y, and z values.
 
+The driver for the software requires a windows machine. I installed VMWare
+Fusion ($72), then Windows XP Pro. Another $40 went into wires and batteries.
+
+Total cost: ~$350.
+
 ## Program
 
 The program is written in python and depends on 3 modules:
