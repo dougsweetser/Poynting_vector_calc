@@ -1,0 +1,24 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Do EM Calculations\n\n\nThis project is a simple bit of data manipulation for the output of a \nTenmars\n\nTriaxial Magnetic Filed Meter, TM-192D ($225 from lessemf.com). The meter\ncreates a csv file where the values are:\n\n\ntime stamp, x reading, y reading, z reading, combined reading\n\n\nThe software assumes one needs only the x, y, and z values.\n\n\nThe driver for the software requires a windows machine. I installed VMWare\nFusion ($72), then Windows XP Pro. Another $40 went into wires and batteries.\n\n\nTotal cost: ~$350.\n\n\nProgram\n\n\nThe program is written in python and depends on 3 modules:\nBunch, docopt, and csv.\n\n\n% pvc.py -h              Douglass-MBP\nusage: pyc.py [--bmG BMGFile] [--bmT BMTFile]\n              [--emG EMGFile] [--emT EMTFile] [--root NAME]\n\n\nGiven 4 csv files, calculates the Poynting vector\n\n\noptional arguments:\n    --bmG BMGFile   background mGauss csv file name [default: bmG.csv]\n    --bmT BMGFile   background mTesla csv file name [default: bmT.csv]\n    --emG BMGFile   experimental mGauss csv file name [default: emG.csv]\n    --emT BMGFile   experimental mTesla csv file name [default: emT.csv]\n    -r NAME --root NAME\n\n\nIf the 4 files are named NAME_bmG.csv, NAME_bmT.csv,  NAME_emG.csv, NAME_emT.csv, set\nthis variable once.\nNote: Skip the \"_\" in the name.\n\n\nMeasuring device\n\n\nA 12V DC motor is run right in front of the meter.\n\n\n\n\nAt home, it produced number like so:\n\n\n% pvc.py -r home         Douglass-MBP\nave background E field: 0.01, 0.0, 1.693\nave background B field: 0.001, 0.0, 0.159523809524\nave experimental E field: 32.4277777778, 30.6722222222, 28.9333333333\nave experimental B field: 3.0195, 2.892, 2.654\nBackground Poynting Vector\n0.0, 9.77619047619e-05, 0.0\nAverage Poynting Vector\n-2.26791595767, 1.35957135185, 1.16811055556",
+            "title": "Home"
+        },
+        {
+            "location": "/#do-em-calculations",
+            "text": "This project is a simple bit of data manipulation for the output of a  Tenmars \nTriaxial Magnetic Filed Meter, TM-192D ($225 from lessemf.com). The meter\ncreates a csv file where the values are:  time stamp, x reading, y reading, z reading, combined reading  The software assumes one needs only the x, y, and z values.  The driver for the software requires a windows machine. I installed VMWare\nFusion ($72), then Windows XP Pro. Another $40 went into wires and batteries.  Total cost: ~$350.",
+            "title": "Do EM Calculations"
+        },
+        {
+            "location": "/#program",
+            "text": "The program is written in python and depends on 3 modules:\nBunch, docopt, and csv.  % pvc.py -h              Douglass-MBP\nusage: pyc.py [--bmG BMGFile] [--bmT BMTFile]\n              [--emG EMGFile] [--emT EMTFile] [--root NAME]  Given 4 csv files, calculates the Poynting vector  optional arguments:\n    --bmG BMGFile   background mGauss csv file name [default: bmG.csv]\n    --bmT BMGFile   background mTesla csv file name [default: bmT.csv]\n    --emG BMGFile   experimental mGauss csv file name [default: emG.csv]\n    --emT BMGFile   experimental mTesla csv file name [default: emT.csv]\n    -r NAME --root NAME  If the 4 files are named NAME_bmG.csv, NAME_bmT.csv,  NAME_emG.csv, NAME_emT.csv, set\nthis variable once.\nNote: Skip the \"_\" in the name.",
+            "title": "Program"
+        },
+        {
+            "location": "/#measuring-device",
+            "text": "A 12V DC motor is run right in front of the meter.   At home, it produced number like so:  % pvc.py -r home         Douglass-MBP\nave background E field: 0.01, 0.0, 1.693\nave background B field: 0.001, 0.0, 0.159523809524\nave experimental E field: 32.4277777778, 30.6722222222, 28.9333333333\nave experimental B field: 3.0195, 2.892, 2.654\nBackground Poynting Vector\n0.0, 9.77619047619e-05, 0.0\nAverage Poynting Vector\n-2.26791595767, 1.35957135185, 1.16811055556",
+            "title": "Measuring device"
+        }
+    ]
+}
